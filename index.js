@@ -9,10 +9,11 @@ app.get("/:first", function(req, res){
   res.send("Your first name is " + req.params.first + ".");
 });
 
+
 app.get("/:first/:last", function(req, res){
   let firstName = req.params.first,
       lastName = req.params.last;
-  res.send();
+  res.send("Your full name is " + firstName + " " + lastName + ".");
 });
 
 
